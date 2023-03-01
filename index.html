@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmostafa</title>
+    <!-- normlize -->
+    <link rel="stylesheet" href="css/normal.css">
+    <!-- font icon  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/file.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Work+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo1.png" alt="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><span class="ar">الرئيسية</span><span class="en">Home</span></li>
+                    <li><span class="ar">اعرف عننا</span><span class="en">About us</span></li>
+                    <li><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></li>
+                    <li><span class="en archange">العربية</span><span class="ar enchange">English</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="landing">
+        <div class="container">
+            <div class="text">
+                <div class="one">
+                    <p class="p1"><span class="ar">اختيارك الاول لطفلك# </span><span class="en">#Your Kid firt choice</span></p>
+                    <h1> <span class="ar">مع حضانة المصطفى </span><span class="en">With Elmostafa kindergarden</span></h1>
+                    <h1><span class="ar">ابنك معانا و انت متطمن</span><span class="en">Your child safe with Us</span></h1>
+                    <h3><span class="ar">سجل دلوقتي</span><span class="en">Sign Up Now</span></h3>
+                </div>
+                <div class="two">
+                    <form action="index.html">
+                        <input type="text" placeholder="الاسم الاول">
+                        <input type="text" placeholder="الاسم الاخير">
+                        <input type="number" placeholder="رقم الهاتف">
+                        <input type="number" placeholder="السن">
+                        <input type="submit" value="تسجيل" class="sub">
+                        <p class="cancel"><span class="ar">الغاء</span><span class="en">Cancel</span></p>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="pic">
+                <img src="images/landing.jpg" alt="landing picture">
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <span></span>
+    </div>
+    <div class="about">
+        <h2><span class="ar">من نحن ؟ </span><span class="en">Who Are We ?</span></h2>
+        <div class="container">
+            <div class="text">
+                <h3><span class="ar">عن الحضانة</span><span class="en">About kindergarden</span></h3>
+                <p><span class="ar">حضانة المصطفى هي حضانة للاطفال في  مرحلة قبل المدرسة و تأسست عام 2015 و بها نخبة من المدرسين هدفهم اخراج جيل كامل من الاطفال الاذكياء</span>
+                <span class="en">Al-Mustafa Nursery is a nursery for children in the pre-school stage, and it was established in 2015 and it has a group of teachers whose goal is to produce a whole generation of smart children</span></p>
+                <h3><span class="ar">رسالتنا</span><span class="en">Our massege</span></h3>
+                <p><span class="ar">بناء جيل ريادي مبدع مبتكر متميز محقق للرؤية الوطنية مواكب للعالمية. قادر على التفاعل
+                    بإيجابية مع متطلبات العصر الحديث القائم على التكنولوجيا عبر بيئة تربوية فعالة في ظل
+                     المشاركة المجتمعية.</span><span class="en">Building a generation of pioneering, creative, innovative, distinguished, achieving the national vision, keeping pace with the world. able to interact
+                        Positively with the requirements of the modern era based on technology through an effective educational environment in light of the
+                         Community participation.</span></p>
+                <h3><span class="ar">شعارنا</span><span class="en">Our Slogan</span></h3>
+                <p><span class="ar">لسنا الوحيدين ولكن نعمل لنكون في الريادة ويشار إلينا بالتميز</span><span class="en">We are not the only ones, but we work to be in the lead and we are referred to as excellence</span></p>
+            </div>
+            <div class="pic">
+                <img src="images/about.png" alt="about us">
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <span></span>
+    </div>
+    <!-- <div class="features">
+        <div class="container">
+            <div class="card">
+                <img src="images/brain.jpg" alt="">
+                <h4>
+                    <span class="ar">تنمية القدرات الزهنية</span><span class="en">scale brain</span>
+                </h4>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        let a = document.querySelector(".one");
+        let b = document.querySelector(".two");
+        let c = document.querySelector(".landing .text h3");
+        a.style.height = "200px";
+        b.style.height = "0px";
+        b.style.flexBasis = "0px";
+        c.onclick = function(){
+            a.style.height = "0px";
+            setTimeout(function(){
+                a.style.flexBasis = "0%" ;
+            },100);
+            b.style.height = "300px";
+            b.style.flexBasis = "";
+        }
+        let d = document.querySelector(".cancel");
+        d.onclick = function(){
+            b.style.height = "0px";
+            setTimeout(function(){
+                b.style.flexBasis = "0%" ;
+            },100);
+            a.style.height = "300px";
+            a.style.flexBasis = "";
+        }
+        let sp = document.querySelectorAll(".ar");
+        let spen = document.querySelectorAll(".en");
+        for(i = 0 ; i < spen.length ; i++){
+            spen[i].style.display = "none";
+        }
+        let ch1 = document.querySelector(".enchange");
+        let ch2 = document.querySelector(".archange");
+        let dirc = document.querySelector(".landing .container");
+        ch1.onclick = function(){
+            for(i = 0 ; i < spen.length ; i++){
+            sp[i].style.display = "none";
+            spen[i].style.display = "";
+            }
+            dirc.style.flexDirection = "row-reverse";
+        }
+        ch2.onclick = function(){
+            for(i = 0 ; i < spen.length ; i++){
+            spen[i].style.display = "none";
+            sp[i].style.display = "";
+            }
+            dirc.style.flexDirection = "row";
+        }
+    </script>
+</body>
+</html>
