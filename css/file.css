@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'El Messiri', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 60px;
+}
+header .container nav ul {
+    display: flex;
+}
+
+header .container nav ul li{
+    margin-left: 20px;
+    padding: 8px;
+    transition: .5s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+header .container nav ul li:hover{
+    color: #fff;
+    background-color: #2500f9;
+    border-radius: 15px;
+}
+header .logo img{
+    height: 50px;
+}
+.landing{
+    height: calc(100vh - 68px);
+    background-image: url(../images/landing.png);
+    background-size:cover;
+}
+.landing .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 68px);
+}
+.landing .container .text {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.landing .container .text .one{
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+.landing .container .text .two{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+.landing .text .two form{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+.landing .text .two input{
+    flex-basis: 80%;
+    height: 40px;
+    margin: 5px;
+    border-style:none ;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.landing .text .two input:focus{
+    outline-style: none;
+    box-shadow: 0px 1px 0px #2500f9; 
+}
+.landing .text .two .sub{
+    width: 50%;
+    background-color: #2500f9;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+}
+.landing .text .two .sub:hover{
+    color: #2500f9;
+    background-color: #fff;
+    border: 2px solid #2500f9;
+}
+.landing .text .two .cancel{
+    width: 80%;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.landing .pic{
+    display: flex;
+    justify-content: center;
+}
+.landing .pic img {
+    height: 80vh;
+}
+@media (max-width: 767px){
+    .landing .pic img {
+        display: none;
+    }
+    .landing .container{
+        justify-content: center;
+    }
+}
+.landing h1{
+    margin-bottom: 10px;
+}
+.landing h3{
+    padding: 8px;
+    background-color: #2500f9;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    cursor: pointer;
+}
+.end{
+    display: flex;
+    justify-content: center;
+}
+.end span{
+    display: block;
+    height: 3px;
+    width: 80%;
+    background-color: #2500f9;
+    margin-top: 20px;
+    position: relative;
+}
+.end span::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #2500f9;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: calc(50% - 5px);
+    background-color: #2500f9;
+}
+.about h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.about .container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.about .container .text p{
+    width: 400px;
+}
+@media (max-width: 767px){
+    .about .container .text p{
+        width: 100%;
+    }
+    .about .container{
+        background-image: url(../images/about\ -\ Copy.png);
+        background-size: cover;
+    }
+}
+.about .pic img{
+    height: 400px;
+}
+@media (max-width: 767px){
+    .about .pic img {
+        display: none;
+    }
+    .about .container{
+        justify-content: center;
+    }
+}
+.features .container{
+    display: flex;
+    justify-content:flex-start ;
+}
+.features .container .card {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features .container .card img{
+    width: 200px;
+}
